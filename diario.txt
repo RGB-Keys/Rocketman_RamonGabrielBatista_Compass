@@ -1,0 +1,4 @@
+Primeiro dia:
+
+Aprendendo a utilizar o Git
+
