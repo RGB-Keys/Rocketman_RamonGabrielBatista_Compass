@@ -1,4 +1,6 @@
-Primeiro dia:
+Primeiro dia: 31/05/22
 
-Aprendendo a utilizar o Git
+° Dia 2: MasterClass
+° Utilização do Git no Linux
+° Criação da branch "develop"
 
