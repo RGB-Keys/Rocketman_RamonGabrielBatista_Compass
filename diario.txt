@@ -10,4 +10,12 @@ Segundo dia: 01/06/22
 ° Atividades da Faculdade
 ° Trabalho em grupo
 
- 
+
+Terceiro dia: 02/06/22
+
+° Dia 3: MasterClass
+° Mini-Projeto 1: Concluído
+° Solução de problema (branch: main)
+° Mais entendimento na ferramenta Git e Javascript
+
+
