@@ -4,3 +4,10 @@ Primeiro dia: 31/05/22
 ° Utilização do Git no Linux
 ° Criação da branch "develop"
 
+
+Segundo dia: 01/06/22
+
+° Atividades da Faculdade
+° Trabalho em grupo
+
+ 
