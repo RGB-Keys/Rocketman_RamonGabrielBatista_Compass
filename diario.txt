@@ -15,7 +15,7 @@ Terceiro dia: 02/06/22
 
 ° Dia 3: MasterClass
 ° Mini-Projeto 1: Concluído
-° Solução de problema (branch: main)
+° Solução do problema (branch: main)
 ° Mais entendimento na ferramenta Git e Javascript
 
 
