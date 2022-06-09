@@ -1,23 +1,24 @@
 import assert from 'assert'
+import chai, { expect } from 'chai'
 
 describe('Meu primeiro teste', () => {
-    it('Verificar uma igualdade', () => {
+    it('Verificar a variável "aux"', () => {
         let aux = 2
-        assert.strictEqual(aux, 2)
+        expect(aux).to.be.equals(2).and.to.be.a('number')
     })
-    it('Verificar uma outra igualdade', () => {
+    it('Verificar uma outra variável "aux"', () => {
         let aux = 'carro'
-        assert.strictEqual(aux, 'carro')
+        expect(aux).to.be.equals('carro').and.to.be.a('string').and.not.equals('charrete')
     })
 })
 
 describe('Meu segundo teste', () => {
     it('Verificar uma desigualdade', () => {
-        let aux = 2
-        assert.notStrictEqual(aux, '2')
+        let sonho = 'Chevette'
+        expect(sonho).not.to.be.equals('Camaro')
     })
-    it('Verificar uma outra desigualdade', () => {
-        let aux = 'Camaro'
-        assert.notStrictEqual(aux, 'Chevette')
+    it('Verificar a superioridade do Chevette perante o Camaro', () => {
+        let realidade = 'barato'
+        expect(realidade).not.to.be.equals('caro')
     })
 })
