@@ -10,4 +10,58 @@ Segundo dia: 01/06/22
 ° Atividades da Faculdade
 ° Trabalho em grupo
 
+<<<<<<< HEAD
  
+=======
+
+Terceiro dia: 02/06/22
+
+° Dia 3: MasterClass
+° Mini-Projeto 1: Concluído
+° Solução do problema (branch: main)
+° Mais entendimento na ferramenta Git e Javascript
+
+
+Quarto dia: 03/06/22
+
+° Dia 3: MasterClass
+° Continuação dos Mini-Projetos do dia 3
+° Adição de 8 Mini-Projetos
+
+
+Extra (Sábado): 04/06/22
+
+° Continuação do Dia 3: MasterClass
+° Início do Dia 4: MasterClass
+
+
+Quinto dia: 06/06/22
+
+° Dia 5: MasterClass
+° Continuação dos Koans
+° Prova de Lógica de Programação
+° Estudo para as provas seguintes
+
+Sexto dia: 07/06/22
+
+° Dia 6: MasterClass
+° Maior parte do tempo estudando
+° Preparação para as provas da semana
+° Mouse quebrou!
+° Registro dos dias anteriores
+
+Sétimo dia: 08/06/22
+
+° Dia 7: MasterClass
+° Duas provas concluídas
+° Dúvida no Koans resolvida
+
+Oitavo dia: 09/06/22
+
+° Dia 8: MasterClass
+° Dificuldades com a internet
+° Termino do trabalho de Design
+° Termino das atividades da Sprint 4
+° Construção do README
+° Estudo para as provas seguintes
+>>>>>>> develop

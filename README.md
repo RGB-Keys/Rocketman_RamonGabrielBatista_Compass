@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 | Rocketman - Sprint 4 
 
 Conteúdos referentes a Sprint 4 - Versionamento de Código
@@ -40,3 +41,8 @@ Pude contar com a ajuda deles durante a resolução do Koans:
 ## 👨 | Autor
 
 * [Ramon Gabriel](https://www.linkedin.com/in/ramon-gabriel-batista-chaves-b42a27232/)
+=======
+# 
+
+Repositório com as atividades realizadas durante a Sprint 4
+>>>>>>> develop

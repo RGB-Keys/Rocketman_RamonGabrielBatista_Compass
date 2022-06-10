@@ -1,3 +1,7 @@
 Teste
 
+<<<<<<< HEAD
 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
+=======
+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
+>>>>>>> develop
