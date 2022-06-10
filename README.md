@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🚀 | Rocketman - Sprint 4 
 
 Conteúdos referentes a Sprint 4 - Versionamento de Código
