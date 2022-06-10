@@ -10,10 +10,6 @@ Segundo dia: 01/06/22
 ° Atividades da Faculdade
 ° Trabalho em grupo
 
-<<<<<<< HEAD
- 
-=======
-
 Terceiro dia: 02/06/22
 
 ° Dia 3: MasterClass
@@ -64,4 +60,3 @@ Oitavo dia: 09/06/22
 ° Termino das atividades da Sprint 4
 ° Construção do README
 ° Estudo para as provas seguintes
->>>>>>> develop
