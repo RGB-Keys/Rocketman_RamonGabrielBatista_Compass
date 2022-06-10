@@ -34,18 +34,30 @@ Extra (Sábado): 04/06/22
 
 Quinto dia: 06/06/22
 
-° Dia: 5 MasterClass
+° Dia 5: MasterClass
 ° Continuação dos Koans
 ° Prova de Lógica de Programação
 ° Estudo para as provas seguintes
 
 Sexto dia: 07/06/22
 
-° Dia: 6 MasterClass
+° Dia 6: MasterClass
 ° Maior parte do tempo estudando
 ° Preparação para as provas da semana
 ° Mouse quebrou!
 ° Registro dos dias anteriores
 
+Sétimo dia: 08/06/22
 
+° Dia 7: MasterClass
+° Duas provas concluídas
+° Dúvida no Koans resolvida
 
+Oitavo dia: 09/06/22
+
+° Dia 8: MasterClass
+° Dificuldades com a internet
+° Termino do trabalho de Design
+° Termino das atividades da Sprint 4
+° Construção do README
+° Estudo para as provas seguintes
