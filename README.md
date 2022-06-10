@@ -23,7 +23,6 @@ Todo o projeto foi desenvolvido com base nas orientações fornecidas na Sprint 
 * [Git](https://git-scm.com/downloads)
 * Javascript
 
-
 ## ✍️ | Agradecimentos
 
 *Em primeiro lugar, agradeço a Deus por ter me concedido está rica oportunidade e de também
@@ -41,8 +40,3 @@ Pude contar com a ajuda deles durante a resolução do Koans:
 ## 👨 | Autor
 
 * [Ramon Gabriel](https://www.linkedin.com/in/ramon-gabriel-batista-chaves-b42a27232/)
-=======
-# 
-
-Repositório com as atividades realizadas durante a Sprint 4
->>>>>>> develop
