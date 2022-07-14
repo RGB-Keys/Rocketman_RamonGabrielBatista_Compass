@@ -2357,7 +2357,7 @@
 															"  body: {",
 															"    mode: 'raw',",
 															"    raw: JSON.stringify({ ",
-															"        \"nome\": `${rName}`,",
+															"        \"nome\": `${rName}` + `${rName}`,",
 															"        \"email\": `${rEmail}`,",
 															"        \"password\": `${pass}`,",
 															"        \"administrador\": `${admin}`",
@@ -2455,7 +2455,7 @@
 															"  body: {",
 															"    mode: 'raw',",
 															"    raw: JSON.stringify({ ",
-															"        \"nome\": `${rName}`,",
+															"        \"nome\": `${rName}` + `${rName}`,",
 															"        \"email\": `${rEmail}`,",
 															"        \"password\": `${pass}`,",
 															"        \"administrador\": `${comum}`",
@@ -2928,7 +2928,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"nome\": \"{{$randomProductName}} + {{$randomAlphaNumeric}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
+													"raw": "{\n  \"nome\": \"{{$randomProductName}} + {{$randomPhoneNumber}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -3372,7 +3372,7 @@
 											"  body: {",
 											"    mode: 'raw',",
 											"    raw: JSON.stringify({ ",
-											"        \"nome\": `${rName}`,",
+											"        \"nome\": `${rName}` + \"Kli\",",
 											"        \"email\": `${rEmail}`,",
 											"        \"password\": `${pass}`,",
 											"        \"administrador\": `${admin}`",
@@ -3941,7 +3941,7 @@
 											"  body: {",
 											"    mode: 'raw',",
 											"    raw: JSON.stringify({ ",
-											"        \"nome\": `${rName}`,",
+											"        \"nome\": `${rName }` + `${ rName}`,",
 											"        \"email\": `${rEmail}`,",
 											"        \"password\": `${pass}`,",
 											"        \"administrador\": `${admin}`",
@@ -4168,7 +4168,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"BeeJh5lz3k6kSIzA\",\n      \"quantidade\": 5\n    },\n    {\n      \"idProduto\": \"K6leHdftCeOJj8BJ\",\n      \"quantidade\": 2\n    }\n  ]\n}\n",
+													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"0WTlGCBQlnwz3HgU\",\n      \"quantidade\": 1\n    },\n    {\n      \"idProduto\": \"0pYLVBDSwhKGWTa2\",\n      \"quantidade\": 1\n    }\n  ]\n}\n",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4596,7 +4596,7 @@
 															"",
 															"const url = pm.environment.get('baseURL')",
 															"const rProdName = pm.variables.replaceIn('{{$randomProductName}}')",
-															"const rAlphaNum = pm.variables.replaceIn('{{$randomAlphaNumeric}}')",
+															"const rPhoneNum = pm.variables.replaceIn('{{$randomPhoneNumber}}')",
 															"",
 															"",
 															"const prodPostRequest = {",
@@ -4609,7 +4609,7 @@
 															"        body: {",
 															"            mode: 'raw',",
 															"            raw: JSON.stringify({ ",
-															"                \"nome\": `${rProdName}` + `${ rAlphaNum}`,",
+															"                \"nome\": `${rProdName}` + `${ rPhoneNum}`,",
 															"                \"preco\": 500,",
 															"                \"descricao\": \"Produto aleatório\",",
 															"                \"quantidade\": 100",
@@ -4635,7 +4635,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"nome\": \"{{$randomProductName}} : {{$randomAlphaNumeric}}{{$randomAlphaNumeric}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
+													"raw": "{\n  \"nome\": \"{{$randomProductName}} : {{$randomPhoneNumber}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4963,7 +4963,7 @@
 											"response": []
 										},
 										{
-											"name": "Cadastrar carrinho",
+											"name": "Cadastrar carrinho (Quant. maior que Estoque)",
 											"event": [
 												{
 													"listen": "prerequest",
