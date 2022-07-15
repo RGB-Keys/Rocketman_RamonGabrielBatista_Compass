@@ -411,13 +411,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseURL}}/usuarios/0R4T3pU9KwtoyDgf",
+											"raw": "{{baseURL}}/usuarios/1Ij9m38XG4T3yAZe",
 											"host": [
 												"{{baseURL}}"
 											],
 											"path": [
 												"usuarios",
-												"0R4T3pU9KwtoyDgf"
+												"1Ij9m38XG4T3yAZe"
 											]
 										}
 									},
@@ -1062,13 +1062,13 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "{{baseURL}}/produtos/4184xTyWGFmcNaiX",
+											"raw": "{{baseURL}}/produtos/5kqEvnFQZX7Xj2cE",
 											"host": [
 												"{{baseURL}}"
 											],
 											"path": [
 												"produtos",
-												"4184xTyWGFmcNaiX"
+												"5kqEvnFQZX7Xj2cE"
 											]
 										}
 									},
@@ -1183,7 +1183,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"nome\": \"{{$randomProductName}} + {{$randomProductName}} + {{$randomAlphaNumeric}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
+											"raw": "{\n  \"nome\": \"{{$randomProductName}} + {{$randomProductName}} + {{$randomAlphaNumeric}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 100000\n}",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -1633,13 +1633,13 @@
 										"method": "DELETE",
 										"header": [],
 										"url": {
-											"raw": "{{baseURL}}/produtos/{{prodId}}",
+											"raw": "{{baseURL}}/produtos/{_id}",
 											"host": [
 												"{{baseURL}}"
 											],
 											"path": [
 												"produtos",
-												"{{prodId}}"
+												"{_id}"
 											]
 										}
 									},
@@ -1750,7 +1750,7 @@
 										"header": [],
 										"body": {
 											"mode": "raw",
-											"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"{{prodId}}\",\n      \"quantidade\": 15\n    },\n    {\n      \"idProduto\": \"YaeJ455lz3k6kSIzA\",\n      \"quantidade\": 3\n    }\n  ]\n}\n",
+											"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"{{prodId}}\",\n      \"quantidade\": 1\n    },\n    {\n      \"idProduto\": \"1BKV8V4pvn7giPxf\",\n      \"quantidade\": 3\n    }\n  ]\n}\n",
 											"options": {
 												"raw": {
 													"language": "json"
@@ -3475,7 +3475,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"{{prodId}}\",\n      \"quantidade\": 15\n    },\n    {\n      \"idProduto\": \"{{idProdTeste}}\",\n      \"quantidade\": 3\n    }\n  ]\n}\n",
+													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"3dZVGLqtqMpOjQOd\",\n      \"quantidade\": 1\n    },\n    {\n      \"idProduto\": \"{{idProdTeste}}\",\n      \"quantidade\": 1\n    }\n  ]\n}\n",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -3635,7 +3635,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"0HkE3o9AChMpZN1w\",\n      \"quantidade\": 15\n    },\n    {\n      \"idProduto\": \"{{idProdTeste}}\",\n      \"quantidade\": 3\n    }\n  ]\n}\n",
+													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"{{prodId}}\",\n      \"quantidade\": 99999999899\n    },\n    {\n      \"idProduto\": \"{{idProdTeste}}\",\n      \"quantidade\": 3\n    }\n  ]\n}\n",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4168,7 +4168,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"0WTlGCBQlnwz3HgU\",\n      \"quantidade\": 1\n    },\n    {\n      \"idProduto\": \"0pYLVBDSwhKGWTa2\",\n      \"quantidade\": 1\n    }\n  ]\n}\n",
+													"raw": "{\n  \"produtos\": [\n    {\n      \"idProduto\": \"K6leHdftCeOJj8BJ\",\n      \"quantidade\": 1\n    },\n    {\n      \"idProduto\": \"pA0J0q8zFeX0eZ43\",\n      \"quantidade\": 1\n    }\n  ]\n}\n",
 													"options": {
 														"raw": {
 															"language": "json"
@@ -4750,33 +4750,13 @@
 													"script": {
 														"exec": [
 															"const response = pm.response.json()",
-															"const quant1 = pm.environment.get('q1')",
-															"const quant2 = pm.environment.get('q2')",
 															"",
 															"pm.environment.set(\"q2\", response.quantidade);",
 															"console.log(response.quantidade);",
 															"",
-															"if (`${quant1}` == 95 && `${quant2}` == 0) {",
-															"    console.log('Funcionou')",
-															"    pm.test(\"Quantidade correta\", function () {",
-															"        pm.response.to.have.status(\"OK\");",
-															"    });",
-															"} else {",
-															"    console.log('Deu ruim')",
-															"    pm.test(\"Quantidade errada\", function () {",
-															"        pm.response.to.have.status(\"Bad Request\");",
-															"    }); ",
-															"}"
-														],
-														"type": "text/javascript"
-													}
-												},
-												{
-													"listen": "prerequest",
-													"script": {
-														"exec": [
 															"const url = pm.environment.get('baseURL')",
 															"const idPT = pm.environment.get('idProd1')",
+															"",
 															"",
 															"const prodGetRequest = {",
 															"  url: `${url}/produtos/${idPT}`,",
@@ -4794,7 +4774,33 @@
 															"    } catch {",
 															"        console.warn('FAIL')",
 															"    }",
-															"});"
+															"",
+															"    const quant1 = pm.environment.get('q1')",
+															"    const quant2 = pm.environment.get('q2')",
+															"",
+															"    if (`${quant1}` == 95 && `${quant2}` == 0) {",
+															"    console.log('Funcionou')",
+															"    pm.test(\"Quantidade correta\", function () {",
+															"        pm.response.to.have.status(\"OK\");",
+															"    });",
+															"    } else {",
+															"    console.log('Deu ruim')",
+															"    pm.test(\"Quantidade errada\", function () {",
+															"        pm.response.to.have.status(\"Bad Request\");",
+															"    }); ",
+															"    }",
+															"});",
+															"",
+															""
+														],
+														"type": "text/javascript"
+													}
+												},
+												{
+													"listen": "prerequest",
+													"script": {
+														"exec": [
+															""
 														],
 														"type": "text/javascript"
 													}
@@ -5241,7 +5247,7 @@
 												"header": [],
 												"body": {
 													"mode": "raw",
-													"raw": "{\n  \"nome\": \"{{$randomProductName}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
+													"raw": "{\n  \"nome\": \"{{$randomProductName}} N°:{{$randomPhoneNumber}}\",\n  \"preco\": 1000,\n  \"descricao\": \"Produto aleatório\",\n  \"quantidade\": 5\n}",
 													"options": {
 														"raw": {
 															"language": "json"
